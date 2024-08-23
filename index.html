@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 permalink: /
 ---
 
@@ -12,6 +12,8 @@ permalink: /
     <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
 
     <p>{% if post.synopsis != null %} {{ post.synopsis }} {% endif %}</p>
+
+<hr>
 
 {% endfor %} 
 

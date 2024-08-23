@@ -29,34 +29,32 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-#theme: jekyll-theme-minimal
-theme: minima 
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 plugins:
   - jekyll-feed
-  - jekyll-seo
-  - jekyll-archives 
+  - jekyll-paginate 
+  - jekyll-sitemap 
+  - jekyll-include-cache 
 
 permalink: /:year/:month/:day/:title/
 
-sass:
-  sass_dir: _sass
-  style: compressed
+#Archives 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 
-include: ['_pages']
+# Locale 
+locale: "en-GB" 
 
-markdown: kramdown
-
-# Jekyll Archives
-jekyll-archives:
-  enabled:
-    - tags 
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
+# Search 
+search: true
+lunr:
+  search_within_pages: true 
 
 # Exclude from processing.
 # The following items will not be processed, by default.

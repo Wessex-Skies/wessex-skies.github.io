@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single 
 title: Syntax Highlighting
 date: 2021-05-14
 tags: [rouge, syntax]
-excerpt:
+synopsis:
   Using Rouge, Jekyll's default syntax highlighter.
 ---
 Syntax highlighters are used to highlight text and code snippets. Rouge is the default highlighter used by Jekyll.

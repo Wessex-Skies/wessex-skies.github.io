@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single
 title: Jekyll Excerpts
 date: 2020-10-21
 tags: [excerpts, liquid]
-excerpt:
+synopsis:
   How to control the use and placement of excerpts within documents.
 ---
 

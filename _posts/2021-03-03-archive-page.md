@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single
 title: Archive Page
 date: 2021-03-03
 tags: [archives, categories, liquid, tags]
-excerpt:
+synopsis:
   Learn how I modified my archive page, so that now all posts are listed according to the year and month of publication. In addition, any categories or tags used in those posts will be automatically listed.
 ---
 I have modified my archive page, so that now all posts are listed according to the year and month of publication. In addition, any categories or tags used in those posts will be automatically listed.

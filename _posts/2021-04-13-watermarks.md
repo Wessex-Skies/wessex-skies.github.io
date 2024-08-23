@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: single
 title: Watermarks
 date: 2021-04-13
 tags: [graphics, linux, web-site, watermarks, resizing, imagemagick]
 banner-image: 2021-04-13/watermark.png
-excerpt:
+synopsis:
   In this article we learn how to protect our pictures by adding a watermark to images and disabling the mouse right click option.
 ---
 
