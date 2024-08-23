@@ -2,7 +2,6 @@
 layout: post
 title: Syntax Highlighting
 date: 2021-05-14
-categories: jekyll
 tags: [rouge, syntax]
 excerpt:
   Using Rouge, Jekyll's default syntax highlighter.

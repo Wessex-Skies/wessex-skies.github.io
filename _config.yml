@@ -29,10 +29,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+#theme: jekyll-theme-minimal
+#theme: minima
+theme: just-the-docs
+
 plugins:
   - jekyll-feed
   - jekyll-seo
+  - jekyll-archives 
+
+permalink: /:year/:month/:day/:title/
 
 sass:
   sass_dir: _sass
@@ -42,12 +48,16 @@ include: ['_pages']
 
 markdown: kramdown
 
-defaults:
-  - scope:
-      type: tags # select all tags pages
-    values:
-      layout: tag_page
-      permalink: tags/:tag/
+# Jekyll Archives
+jekyll-archives:
+  enabled:
+    - tags 
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

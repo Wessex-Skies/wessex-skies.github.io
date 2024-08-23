@@ -2,7 +2,6 @@
 layout: post
 title: Bluetooth
 date: 2021-01-26
-categories: ubuntu
 tags: [bluetooth]
 excerpt:
   This short article explains how to connect to a bluetooth device from the command line on Ubunut 20.04.

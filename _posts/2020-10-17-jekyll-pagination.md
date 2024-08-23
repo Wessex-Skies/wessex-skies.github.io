@@ -2,7 +2,6 @@
 layout: post
 title: Jekyll Pagination
 date: 2020-10-17
-categories: jekyll
 tags: [liquid, pagination]
 excerpt:
   If you have a lot of posts, then pagination is essential.

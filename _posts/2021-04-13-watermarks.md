@@ -2,7 +2,6 @@
 layout: post
 title: Watermarks
 date: 2021-04-13
-categories: photography
 tags: [graphics, linux, web-site, watermarks, resizing, imagemagick]
 banner-image: 2021-04-13/watermark.png
 excerpt:

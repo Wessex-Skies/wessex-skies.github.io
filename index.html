@@ -1,0 +1,17 @@
+---
+layout: default
+permalink: /
+---
+
+<h1>Posts</h1>
+
+{% for post in site.posts %}
+        
+    <span class="post-date">{{ post.date | date: "%d %B %Y"}}</span>
+
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+
+    <p>{% if post.synopsis != null %} {{ post.synopsis }} {% endif %}</p>
+
+{% endfor %} 
+
