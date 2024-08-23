@@ -12,7 +12,7 @@ source "https://rubygems.org"
 
 # Preferred theme 
 #gem "minima", "~> 2.5"
-gem "just-the-docs"
+gem "jekyll-theme-minimal"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
