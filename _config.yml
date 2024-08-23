@@ -32,6 +32,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+include: ['_pages']
+
+markdown: kramdown
+
+defaults:
+  - scope:
+      type: tags # select all tags pages
+    values:
+      layout: tag_page
+      permalink: tags/:tag/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

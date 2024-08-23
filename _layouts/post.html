@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div id="post">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+        <span>
+            {{ page.date | date: "%-d %B %Y" }}
+        </span>
+
+        <br />
+            
+        <span>
+            Tagged:
+            {% for tag in page.tags %}
+                <a class="post-tags" href="{{ site.baseurl }}/tag/{{tag}}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+            {% endfor %}
+        </span>
+    </p>
+
+    {{ content }}
+
+</div><!-- End #post -->
