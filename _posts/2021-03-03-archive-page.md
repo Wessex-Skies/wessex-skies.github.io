@@ -11,10 +11,6 @@ I have modified my archive page, so that now all posts are listed according to t
 
 I also realise that using this method, one does not need to use the jekyll plugin, `jekyll-archives`, and I have removed it from my site.
 
-<!--more-->
-
-{% include toc.html %}
-
 ## Categories
 ```html
 {% raw %}<div id="archive-cat">

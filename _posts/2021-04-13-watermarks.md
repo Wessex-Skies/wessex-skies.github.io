@@ -8,7 +8,6 @@ banner-image: 2021-04-13/watermark.png
 excerpt:
   In this article we learn how to protect our pictures by adding a watermark to images and disabling the mouse right click option.
 ---
-Without putting too fine a point on it, as soon as you upload pictures to the internet, you lose control of them. Anyone can download them from your website and use them without your permission. You can however make life a little more difficult for the unscrupulous.
 
 ## Scaling
 My first suggestion would be to scale your pictures down, so that whilst they look good on your website the resolution is too low to produce a good printed copy. I always resize my pictures so the longest side is no more than 1024px and resolution is no greater than 90ppi.

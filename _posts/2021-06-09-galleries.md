@@ -12,8 +12,6 @@ excerpt:
 
 ---
 
-As you might expect from a photographer's blog, my posts will often include collections of pictures. Creating a new gallery framework for each new post was becoming tedious, but thanks to the versatility of jekyll and liquid, there is a way to make the task a little easier.
-
 As an example, my previous post, [Pushing Film](/2021/06/07/pushing-film) includes a number of pictures. The pictures used are listed in the posts frontmatter in the following fashion;
 
 ```liquid
