@@ -1,0 +1,22 @@
+---
+layout: single
+permalink: /tags/
+---
+
+<h1>Tags</h1> 
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+    {% assign tagname = tag | first | slugify %}
+    <h2 id="{{ tagname }}">{{ tagname | capitalize }}</h2>
+    
+    <ul>
+        {% for post in tag[1] %}
+            <li>
+                <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+

@@ -20,17 +20,11 @@
 
 title: Wessex Skies
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description:
+  So what do I write here? 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
-# Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "aqua" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 plugins:
   - jekyll-feed
@@ -40,7 +34,8 @@ plugins:
 
 permalink: /:year/:month/:day/:title/
 
-#Archives 
+include: ['_pages']
+
 category_archive:
   type: liquid
   path: /categories/
@@ -48,13 +43,27 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Locale 
-locale: "en-GB" 
+# ----------------------
+# Theme Minimal Mistakes 
+#
+# Documentation on this theme can be found at 
+# https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+#
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "aqua" 
+# "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Search 
 search: true
 lunr:
   search_within_pages: true 
+
+# Locale 
+locale: "en-GB" 
+
+# End of theme settings
+# ----------------------
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
