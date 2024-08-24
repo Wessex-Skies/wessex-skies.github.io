@@ -1,31 +1,17 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# -------------------------
+# Jekyll Configuration File
+# -------------------------
 
+# Site settings
 title: Wessex Skies
 
 description:
-  So what do I write here? 
+  Somewhere to keep my notes. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wessex-skies.github.io"
 
+# Build Settings
 plugins:
   - jekyll-feed
   - jekyll-paginate 
@@ -50,16 +36,40 @@ tag_archive:
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 #
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "aqua" 
+minimal_mistakes_skin: "mint" 
 # "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+locale: "en-GB" 
+date_format: "%d %B %Y"
+enable_copy_code_button: true
 
 # Search 
 search: true
 lunr:
   search_within_pages: true 
 
-# Locale 
-locale: "en-GB" 
+# Defaults 
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
+      layout: single
+      comments: false
+      share: false
+      related: false
+      author_profile: false
+    
+# Author 
+# For this to appear on the web site, `author_profile` must be set to `true`
+author:
+  name     : "Your Name"
+  avatar   : #"/assets/images/bio-photo.jpg"
+  bio      : "My awesome biography constrained to a sentence or two goes here."
+  location : "Somewhere, USA"
 
 # End of theme settings
 # ----------------------

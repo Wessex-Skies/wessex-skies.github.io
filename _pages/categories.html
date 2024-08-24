@@ -1,0 +1,22 @@
+---
+layout: archive
+permalink: /categories/
+---
+
+<h1>Posts Sorted by Category</h1> 
+
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+    {% assign categoryname = category | first | slugify %}
+    <h2 id="{{ categoryname }}">{{ categoryname | capitalize }}</h2>
+    
+    <ul>
+        {% for post in category[1] %}
+            <li>
+                <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
+
