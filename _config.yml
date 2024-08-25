@@ -29,8 +29,8 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# ----------------------
-# Theme Minimal Mistakes 
+# -----------------------------------
+# Settings for theme Minimal Mistakes 
 #
 # Documentation on this theme can be found at 
 # https://mmistakes.github.io/minimal-mistakes/docs/configuration/
@@ -61,7 +61,7 @@ defaults:
       comments: false
       share: false
       related: false
-      author_profile: false
+      author_profile: true
     
 # Author 
 # For this to appear on the web site, `author_profile` must be set to `true`
@@ -72,5 +72,5 @@ author:
   location : "Under the Wessex Skies"
 
 # End of theme settings
-# ----------------------
+# -----------------------------------
 
