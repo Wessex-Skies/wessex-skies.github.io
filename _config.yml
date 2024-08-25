@@ -6,7 +6,7 @@
 title: Wessex Skies
 
 description:
-  Somewhere to keep my notes. 
+  Somewhere to keep my notes 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wessex-skies.github.io"
@@ -68,7 +68,7 @@ defaults:
 author:
   name     : "Paul"
   avatar   : #"/assets/images/bio-photo.jpg"
-  bio      : "More to follow"
+  bio      : "More to follow, but who knows when"
   location : "Under the Wessex Skies"
 
 # End of theme settings
