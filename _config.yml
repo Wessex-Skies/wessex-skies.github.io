@@ -68,7 +68,7 @@ defaults:
 author:
   name     : "Paul"
   avatar   : #"/assets/images/bio-photo.jpg"
-  bio      : ""
+  bio      : "More to follow"
   location : "Under the Wessex Skies"
 
 # End of theme settings
