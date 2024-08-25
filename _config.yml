@@ -66,10 +66,10 @@ defaults:
 # Author 
 # For this to appear on the web site, `author_profile` must be set to `true`
 author:
-  name     : "Your Name"
+  name     : "Paul"
   avatar   : #"/assets/images/bio-photo.jpg"
-  bio      : "My awesome biography constrained to a sentence or two goes here."
-  location : "Somewhere, USA"
+  bio      : ""
+  location : "Under the Wessex Skies"
 
 # End of theme settings
 # ----------------------
