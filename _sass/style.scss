@@ -1,0 +1,251 @@
+//-------------------------------------------------------------------------------------
+// 
+// style.scss 
+// 
+//-------------------------------------------------------------------------------------
+
+html,
+body {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+html {
+    font-size: $font-size-base;
+}
+
+ body {
+    max-width: $main-width-normal;
+    margin: 0 auto;
+    background-color: $color-background;
+    font-family: $font-text;
+    color: $color-font;
+    overflow-x: hidden;
+}
+
+header {
+    max-width: 100%;
+    border-bottom: solid 0.05rem $color-theme;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: rgba($color-theme, 0.05);
+}
+
+a.site-title {
+    color: $color-theme !important;
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    font-weight: 600;
+}
+
+.strap_line {
+    text-transform: lowercase;
+    letter-spacing: 0.2rem;
+    font-size: $font-size-small;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, em, a, th, tr, td {
+    font-weight: 400;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+h1,
+h1 a:link {
+    font-size: 1.55rem;
+    letter-spacing: 0.25rem;
+}
+
+#index h1.yearmonth {
+    border-left: solid 4px $color-theme;
+    padding-left: 0.5rem;
+}
+
+h2,
+h2 a:link {
+    font-size: 1.30rem;
+}
+
+h3 {
+    font-size: 1.10rem;
+    padding-top: 1rem;
+}
+
+p, ul, li, em, a {
+    font-size: 1rem ;
+    line-height: 1.667;
+}
+
+//-------------------------------------------------------------------------------------
+// Main Container
+.main {
+    max-width: 100%;
+}
+
+.article {
+    padding-bottom: 2.5rem ;
+}
+
+//-------------------------------------------------------------------------------------
+// Links
+a:hover,
+a:active,
+a:visited,
+a:link {
+    color: $color-link ;
+	text-decoration: none;
+}
+
+//-------------------------------------------------------------------------------------
+// Images
+img {
+    width: 100%;
+    padding: 4px;
+    border: solid 1.5px $color-theme;
+}
+
+img+em {
+    font-style: italic;
+    font-size: $font-size-small;
+}
+
+//-------------------------------------------------------------------------------------
+// Tags
+.index-tags {
+    font-size: $font-size-small;
+    padding: 0.1rem 0.2rem 0.15rem 0.2rem;
+    border: solid 0.05rem $color-link;
+    border-radius: 0.25rem;
+}
+
+.index-tags {
+    float: left;
+    margin: 0.15rem;
+}
+
+//-------------------------------------------------------------------------------------
+// Card
+// Used with the post listings
+.card {
+    background-color: $color-background;
+    padding: 0; //0.5rem 0.5rem 0.1rem 0.5rem;
+    border: 0; //solid 0.05rem $gray-500;
+
+    h3 {
+        padding-top: 0;
+    }
+}
+
+//-------------------------------------------------------------------------------------
+// Tables
+table {
+    width: 100%;
+}
+
+table, th,td,tr {
+    font-size: $font-size-small;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: $gray-400;
+}
+
+tr:nth-child(odd) {
+    background-color: $gray-200;
+}
+
+//-------------------------------------------------------------------------------------
+// Blockquote
+blockquote {
+    font-family: $font-family-serif;
+    display: block;
+    background-color: $gray-200;  
+    color: $gray-800;
+    width: 100% ;
+    margin-left: 0; 
+    border-left: solid 0.2rem $color-theme;
+    padding: 0.8rem 0.8rem 0.1rem 0.8rem; 
+    min-width: 100%;
+}
+
+blockquote p {
+    font-style: italic ;
+}
+
+//-------------------------------------------------------------------------------------
+// Fenced Code Block
+pre code {
+    font-family: $font-monospace;
+}
+
+pre {
+    display: block;
+    background-color: $gray-200;
+    color: $gray-800;
+    overflow: auto;
+    min-width: 100%;
+    padding: 0.8rem;
+}
+
+//-------------------------------------------------------------------------------------
+// Navigation
+nav {
+    width: 100%;
+}
+
+//-------------------------------------------------------------------------------------
+// Pager
+.pager {
+    padding-top: 1rem ;
+}
+
+.previous {
+    float: left ;
+}
+
+.next {
+    float: right ;
+}
+
+//-------------------------------------------------------------------------------------
+// Social Media
+.social-media a:link {
+    font-size: $font-size-small;
+}
+
+.social-media ul {
+    list-style-type: none;
+    text-align: left; 
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline;
+    padding-right: 0.5rem;
+}
+
+//-------------------------------------------------------------------------------------
+// Footer
+footer {
+    max-width: 100%;
+    margin-top: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    border-top: solid 0.05rem $color-theme;
+}
+
+footer p,
+footer em {
+    font-size: $font-size-small;
+}
+
+

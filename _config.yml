@@ -1,93 +1,57 @@
-# -------------------------
-# Jekyll Configuration File
-# -------------------------
-
-# Site settings
+# _config.yml
+#
 title: Wessex Skies
-
-description: Somewhere to keep my notes 
+strap_line: A Repository for My Notes
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wessex-skies.github.io"
+url: "https://wessex-skies.github.io/"
 
-# Build Settings
+# Post Default Frontmatter
+defaults:
+  -
+    values:
+      layout: "post"
+
+# Build settings
+permalink: /:year/:month/:day/:title/
+
 plugins:
   - jekyll-feed
-  - jekyll-paginate 
-  - jekyll-sitemap 
-  - jekyll-include-cache
-  - jekyll-gist
-  
-permalink: /:year/:month/:day/:title/
+  - jekyll-paginate
+
+destination: _site
+
+sass:
+  sass_dir: _sass
+  style: compressed
 
 include: ['_pages']
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+markdown: kramdown
 
-# -----------------------------------
-# Settings for theme Minimal Mistakes 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Server Port (default is 4000)
+port: 4000
+
+# Exclude from Processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
 #
-# Documentation on this theme can be found at 
-# https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
 #
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-#minimal_mistakes_skin: "mint" 
-# "air", "aqua", "contrast", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-locale: "en-GB" 
-date_format: "%d %B %Y"
-enable_copy_code_button: true
-
-# Search 
-search: true
-lunr:
-  search_within_pages: true 
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      show_date: true
-      read_time: true
-      layout: single
-      comments: false
-      share: false
-      related: false
-      author_profile: false
-
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      show_date: false
-      read_time: false
-      layout: single
-      comments: false
-      share: false
-      related: false
-      author_profile: false
-
-# Author 
-# For this to appear on the web site, `author_profile` must be set to `true`
-#author:
-#  name     : "Paul"
-#  avatar   : #"/assets/images/bio-photo.jpg"
-#  bio      : "More to follow, but who knows when"
-#  location : "Under the Wessex Skies"
-
-# Pagination
-paginate: 8 # amount of posts to show
-paginate_path: /blog/page:num/
-
-# End of theme settings
-# -----------------------------------
-
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /tags/
+---
+
+<h1>Posts Sorted by Tag</h1> 
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+    {% assign tagname = tag | first | slugify %}
+    <h2 id="{{ tagname }}">{{ tagname | capitalize }}</h2>
+    
+    {% for post in tag[1] %}
+
+        {% include post-list.html %}
+        
+    {% endfor %}
+
+{% endfor %}
+

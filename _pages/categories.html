@@ -1,0 +1,22 @@
+---
+layout: page
+permalink: /categories/
+---
+
+<h1>Posts Sorted by Category</h1> 
+
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+    {% assign categoryname = category | first | slugify %}
+
+
+    <h2 id="{{ categoryname }}">{{ categoryname | capitalize }}</h2>
+    
+    {% for post in category[1] %}
+
+        {% include post-list.html %}
+        
+    {% endfor %}
+
+{% endfor %}
+

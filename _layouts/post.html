@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div id="post" class="main">
+    <div class="container-fluid">
+
+        <h1>{{ page.title }}</h1>
+
+        <p class="post-meta">
+            <span>
+                {{ page.date | date: "%-d %B %Y" }}
+            </span>
+
+            <br />
+
+            <span>
+                Category:
+                {% for category in page.categories %}
+                    <a class="post-categories" href="{{ site.baseurl }}/categories/#{{ category }}">{{ category }}</a>{% unless forloop.last %} {% endunless %}
+                {% endfor %}
+            </span>
+
+            <br /> 
+
+            <span>
+                Tagged:
+                {% for tag in page.tags %}
+                    <a class="post-tags" href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+                {% endfor %}
+            </span>
+        </p>
+
+        <p>{% if page.synopsis != null %} {{ page.synopsis }} {% endif %}</p>
+
+        {{ content }}
+
+    </div><!--End of container-fluid-->
+</div><!-- End main -->

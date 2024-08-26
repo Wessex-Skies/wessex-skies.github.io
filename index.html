@@ -1,9 +1,15 @@
 ---
-layout: splash
-header:
-    overlay_image: /assets/images/banner.jpg
-    overlay_filter: 0.3
-    image_description: "Wessex on a Cold Winter Morning"
+layout: page
+permalink: /
 ---
 
+<h1>Posts</h1>
+
+{% for post in site.posts %}
+    
+    {% include post-list.html %}
+
+    <hr>
+
+{% endfor %} 
 
