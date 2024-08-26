@@ -16,8 +16,9 @@ plugins:
   - jekyll-feed
   - jekyll-paginate 
   - jekyll-sitemap 
-  - jekyll-include-cache 
-
+  - jekyll-include-cache
+  - jekyll-gist
+  
 permalink: /:year/:month/:day/:title/
 
 include: ['_pages']
@@ -48,7 +49,7 @@ search: true
 lunr:
   search_within_pages: true 
 
-# Defaults 
+# Defaults - Posts
 defaults:
   # _posts
   - scope:

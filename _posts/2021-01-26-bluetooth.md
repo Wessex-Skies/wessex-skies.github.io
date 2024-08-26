@@ -3,7 +3,7 @@ title: Bluetooth
 date: 2021-01-26
 categories: linux 
 tags: [bluetooth]
-synopsis:
+excerpt:
   How to connect to a bluetooth device from the command line on Ubunut 20.04.
 ---
 

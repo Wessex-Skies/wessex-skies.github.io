@@ -3,7 +3,7 @@ title: Archive Page
 date: 2021-03-03
 categories: jekyll
 tags: [categories, liquid, tags]
-synopsis:
+excerpt:
   Listing posts according to the year and month of publication. In addition, any categories or tags used in those posts will be automatically listed.
 ---
 

@@ -3,7 +3,7 @@ title: Syntax Highlighting
 date: 2021-05-14
 categories: jekyll
 tags: [rouge, gem]
-synopsis:
+excerpt:
   Using Rouge, Jekyll's default syntax highlighter.
 ---
 

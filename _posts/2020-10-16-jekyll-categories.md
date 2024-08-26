@@ -3,7 +3,7 @@ title: Jekyll Categories
 date: 2020-10-16
 categories: jekyll
 tags: [categories, frontmatter, liquid]
-synopsis:
+excerpt:
   So how do we implement and make use of categories when building a website with Jekyll?
 ---
 

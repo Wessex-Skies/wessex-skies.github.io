@@ -3,7 +3,7 @@ title: Jekyll Excerpts
 date: 2020-10-21
 categories: jekyll
 tags: [liquid]
-synopsis:
+excerpt:
   How to control the use and placement of excerpts within documents.
 ---
 
