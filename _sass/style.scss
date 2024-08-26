@@ -51,24 +51,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li, em, a, th, tr, td {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
-    text-transform: uppercase;
     letter-spacing: 0.15rem;
 }
 
 h1,
 h1 a:link {
     font-size: 1.55rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
     letter-spacing: 0.25rem;
-}
-
-#index h1.yearmonth {
-    border-left: solid 4px $color-theme;
-    padding-left: 0.5rem;
 }
 
 h2,
 h2 a:link {
     font-size: 1.30rem;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -129,19 +127,6 @@ img+em {
 }
 
 //-------------------------------------------------------------------------------------
-// Card
-// Used with the post listings
-.card {
-    background-color: $color-background;
-    padding: 0; //0.5rem 0.5rem 0.1rem 0.5rem;
-    border: 0; //solid 0.05rem $gray-500;
-
-    h3 {
-        padding-top: 0;
-    }
-}
-
-//-------------------------------------------------------------------------------------
 // Tables
 table {
     width: 100%;
@@ -197,22 +182,11 @@ pre {
 
 //-------------------------------------------------------------------------------------
 // Navigation
-nav {
-    width: 100%;
-}
-
-//-------------------------------------------------------------------------------------
-// Pager
-.pager {
-    padding-top: 1rem ;
-}
-
-.previous {
-    float: left ;
-}
-
-.next {
-    float: right ;
+.nav-items {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    padding: 0.1rem 0.2rem 0.15rem 0.2rem;
+    float: left;
 }
 
 //-------------------------------------------------------------------------------------

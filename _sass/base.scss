@@ -40,14 +40,14 @@ $font-family-sans: source-sans-pro, sans-serif;
 $font-family-serif: source-serif-pro, serif;
 $font-family-monospace: fira-mono, monospace;
 
-$font-heading: $font-family-sans;
+$font-heading: $font-family-serif;
 $font-text: $font-family-sans;
 $font-monospace: $font-family-monospace;
 
 //-------------------------------------------------------------------------------------
 // Font Sizes
 $font-size-base: 11pt;
-$font-size-small: 10pt;
+$font-size-small: 0.85rem;
 
 //-------------------------------------------------------------------------------------
 // Body Dimensions
