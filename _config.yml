@@ -84,9 +84,9 @@ defaults:
 #  bio      : "More to follow, but who knows when"
 #  location : "Under the Wessex Skies"
 
-# Pagination 
+# Pagination
 paginate: 8 # amount of posts to show
-paginate_path: /page:num/
+paginate_path: /blog/page:num/
 
 # End of theme settings
 # -----------------------------------
