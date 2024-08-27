@@ -1,13 +1,24 @@
 ---
 layout: page
 permalink: /
+id: index
 ---
 
 <h1>Posts</h1>
 
 {% for post in site.posts %}
     
-    {% include post-list.html %}
+    <div id="post-list">
+
+        <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <p>
+            <span class="post-date">{{ post.date | date: "%d/%m/%Y" }} </span> <br />
+            <span class="post-excerpt">{% if post.excerpt != null %} {{ post.excerpt }} {% endif %}</span>
+        </p>
+
+        <hr />
+    </div> 
 
 {% endfor %} 
 

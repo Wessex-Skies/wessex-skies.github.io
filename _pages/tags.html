@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /tags/
+id: page
 ---
 
 <h1>Posts Sorted by Tag</h1> 
@@ -12,8 +13,18 @@ permalink: /tags/
     
     {% for post in tag[1] %}
 
-        {% include post-list.html %}
-        
+        <div id="post-list">
+
+            <h3><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+
+            <p>
+                <span class="post-date">{{ post.date | date: "%d/%m/%Y" }} </span> <br />
+                <span class="post-excerpt">{% if post.excerpt != null %} {{ post.excerpt }} {% endif %}</span>
+            </p>
+
+            <hr />
+        </div> 
+                
     {% endfor %}
 
 {% endfor %}
