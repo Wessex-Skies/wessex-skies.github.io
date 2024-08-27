@@ -4,20 +4,14 @@ permalink: /
 id: index
 ---
 
-<h1>Posts</h1>
+<div id="post-list">
+    <h1>Posts</h1>
+    <ul>
+        {% for post in site.posts %}
+        
+            <li><a class="post-title" href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %b %Y" }}
 
-{% for post in site.posts %}
-    
-    <div id="post-list">
-
-        <h2><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></h2>
-
-        <p>
-            <span class="post-date">{{ post.date | date: "%d/%m/%Y" }} </span> <br />
-            <span class="post-excerpt">{% if post.excerpt != null %} {{ post.excerpt }} {% endif %}</span>
-        </p>
-
-    </div> 
-
-{% endfor %} 
+        {% endfor %} 
+    </ul>
+</div> 
 

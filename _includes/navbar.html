@@ -1,9 +1,9 @@
-<nav class="navbar">
-
-    {% for nav in site.data.navbar %}
-    
-        <a class="nav-items" href="{{ nav.link }}">{{ nav.name }}</a>
-    
-    {% endfor %}
-    
+<nav class="navbar navbar-expand navbar-light">
+    <ul class="navbar-nav justify-content-end">
+        {% for item in site.data.navbar %}
+            <li>
+                <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
 </nav>

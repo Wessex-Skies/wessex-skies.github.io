@@ -17,7 +17,7 @@ html {
  body {
     max-width: $main-width-normal;
     margin: 0 auto;
-    background-color: $color-background;
+    background-color: $color-bg-main;
     font-family: $font-text;
     color: $color-font;
     overflow-x: hidden;
@@ -25,22 +25,23 @@ html {
 
 header {
     max-width: 100%;
-    border-bottom: solid 0.05rem $color-theme;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    background-color: rgba($color-theme, 0.05);
+    border-bottom: solid 0.05em $color-theme;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    background-color: $color-bg-compliment;
 }
 
 a.site-title {
-    color: $color-theme !important;
+    color: $color-font !important;
+    font-size: 1.1em;
     text-transform: uppercase;
-    letter-spacing: 0.35rem;
+    letter-spacing: 0.65em;
     font-weight: 600;
 }
 
 .strap_line {
     text-transform: lowercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.25em;
     font-size: $font-size-small;
 }
 
@@ -51,31 +52,30 @@ h1, h2, h3, h4, h5, h6, p, ul, li, em, a, th, tr, td {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.15em;
 }
 
-h1,
-h1 a:link {
-    font-size: 1.55rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+h1, h1 a:link {
+    font-size: 1.50em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
     text-transform: uppercase;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.25em;
 }
 
-h2,
-h2 a:link {
-    font-size: 1.30rem;
+h2, h2 a:link {
+    font-size: 1.25em;
+    padding-top: 1em;
     text-transform: uppercase;
 }
 
 h3 {
-    font-size: 1.10rem;
-    padding-top: 1rem;
+    font-size: 1.10em;
+    padding-top: 1em;
 }
 
 p, ul, li, em, a {
-    font-size: 1rem ;
+    font-size: 1em ;
     line-height: 1.667;
 }
 
@@ -86,7 +86,7 @@ p, ul, li, em, a {
 }
 
 .article {
-    padding-bottom: 2.5rem ;
+    padding-bottom: 2.5em ;
 }
 
 //-------------------------------------------------------------------------------------
@@ -97,6 +97,13 @@ a:visited,
 a:link {
     color: $color-link ;
 	text-decoration: none;
+}
+
+// Navigation 
+nav a:link {
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    padding: 0;
 }
 
 //-------------------------------------------------------------------------------------
@@ -116,14 +123,14 @@ img+em {
 // Tags
 .index-tags {
     font-size: $font-size-small;
-    padding: 0.1rem 0.2rem 0.15rem 0.2rem;
-    border: solid 0.05rem $color-link;
-    border-radius: 0.25rem;
+    padding: 0.1em 0.2em 0.15em 0.2em;
+    border: solid 0.05em $color-link;
+    border-radius: 0.25em;
 }
 
 .index-tags {
     float: left;
-    margin: 0.15rem;
+    margin: 0.15em;
 }
 
 //-------------------------------------------------------------------------------------
@@ -156,8 +163,8 @@ blockquote {
     color: $gray-800;
     width: 100% ;
     margin-left: 0; 
-    border-left: solid 0.2rem $color-theme;
-    padding: 0.8rem 0.8rem 0.1rem 0.8rem; 
+    border-left: solid 0.2em $color-theme;
+    padding: 0.8em 0.8em 0.1em 0.8em; 
     min-width: 100%;
 }
 
@@ -177,16 +184,7 @@ pre {
     color: $gray-800;
     overflow: auto;
     min-width: 100%;
-    padding: 0.8rem;
-}
-
-//-------------------------------------------------------------------------------------
-// Navigation
-.nav-items {
-    font-size: $font-size-small;
-    text-transform: uppercase;
-    padding: 0.1rem 0.2rem 0.15rem 0.2rem;
-    float: left;
+    padding: 0.8em;
 }
 
 //-------------------------------------------------------------------------------------
@@ -204,17 +202,18 @@ pre {
 
 .social-media li {
     display: inline;
-    padding-right: 0.5rem;
+    padding-right: 0.5em;
 }
 
 //-------------------------------------------------------------------------------------
 // Footer
 footer {
     max-width: 100%;
-    margin-top: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 2rem;
-    border-top: solid 0.05rem $color-theme;
+    margin-top: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    border-top: solid 0.05em $color-theme;
+    background-color: $color-bg-compliment;
 }
 
 footer p,
