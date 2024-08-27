@@ -17,8 +17,13 @@ permalink: /:year/:month/:day/:title/
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-
+  - jekyll-archives
+  - jekyll-paginate 
+  - jekyll-sitemap 
+  - jekyll-gist 
+  - jekyll-include-cache 
+  - jekyll-github-metadata 
+  
 destination: _site
 
 sass:
@@ -35,8 +40,6 @@ kramdown:
 
 # Server Port (default is 4000)
 port: 4000
-
-github: [metadata]
 
 # Exclude from Processing.
 # The following items will not be processed, by default.
