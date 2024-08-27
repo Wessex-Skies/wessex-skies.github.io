@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-include-cache"
   gem "jekyll-github-metadata"
+  gem "liquid"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

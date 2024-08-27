@@ -3,7 +3,7 @@
 title: Wessex Skies
 strap_line: A Repository for My Notes
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://wessex-skies.github.io/"
 
 # Post Default Frontmatter
@@ -22,7 +22,8 @@ plugins:
   - jekyll-sitemap 
   - jekyll-gist 
   - jekyll-include-cache 
-  - jekyll-github-metadata 
+  - jekyll-github-metadata
+  - liquid
   
 destination: _site
 
