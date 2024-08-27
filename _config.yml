@@ -36,6 +36,8 @@ kramdown:
 # Server Port (default is 4000)
 port: 4000
 
+github: [metadata]
+
 # Exclude from Processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
