@@ -1,5 +1,5 @@
 ---
-title: Watermarks
+title: Protecting Images
 date: 2021-04-13
 categories: linux
 tags: [graphics, watermarks, resizing]
@@ -32,7 +32,7 @@ The watermark can be overlaid on the pictures using `Imagemagick`. The following
 mogrify -gravity southeast -geometry +10+10 -draw "image Over 0,0 320,21 '/home/paul/watermark.png'" *.jpg
 ```
 
-# Automating the Process
+## Automating the Process
 
 Finally, and to make the process straightforward, I have written a script that combines the resizing and watermarking of the pictures, as follows;
 
