@@ -1,7 +1,7 @@
 # _config.yml
 #
 title: Wessex Skies
-strap_line: Just another repository
+strap_line: Just another Github repository
 
 baseurl: ""
 url: "https://wessex-skies.github.io/"
