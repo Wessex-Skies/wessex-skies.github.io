@@ -7,6 +7,8 @@ excerpt:
   How to connect to a bluetooth device from the command line on Ubunut 20.04.
 ---
 
+# Connect to a Bluetooth Device
+
 How to connect to a bluetooth device from the command line on Ubunut 20.04.
 
 To establish which bluetooth devices are available, type the command `bluetoothctl devices`. The output should be similar to the following, providing the MAC address and name of the devices found;

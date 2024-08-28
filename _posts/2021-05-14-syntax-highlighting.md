@@ -7,6 +7,8 @@ excerpt:
   Using Rouge, Jekyll's default syntax highlighter.
 ---
 
+# Syntax Highlighting
+
 Syntax highlighters are used to highlight text and code snippets. Rouge is the default highlighter used by Jekyll.
 
 Begin by installing the `rouge` gemfile

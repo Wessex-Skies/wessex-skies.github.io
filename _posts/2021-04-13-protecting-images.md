@@ -8,11 +8,13 @@ excerpt:
 toc: true
 ---
 
-# Scaling
+# Protecting Images
+
+## Scaling
 
 Scale your pictures down, so that whilst they look good on your website the resolution is too low to produce a good printed copy. I always resize my pictures so the longest side is no more than 1024px and resolution is no greater than 90ppi.
 
-# Disable Right Click
+## Disable Right Click
 
 Another option is to disable the mouse right click option, thereby removing the ability to download the images from the web page. This is achieved by adding the following javascript to the `head` section of your webpages;
 
@@ -20,7 +22,7 @@ Another option is to disable the mouse right click option, thereby removing the 
 <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
 ```
 
-# Watermarks
+## Watermarks
 
 Of course, as soon as your web page has been loaded the pictures will have been copied to the browsers cache, from where they could be saved. With that in mind, I would always recommend you add a watermark to your pictures. You will need to create a suitable watermark, and save it as a `.png`. Mine, which you will see in the bottom right corner of my pictures, is comprised of a line of text sitting on a grey background set to 50% opacity.
 

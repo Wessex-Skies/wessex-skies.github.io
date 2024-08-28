@@ -7,9 +7,11 @@ excerpt:
   Listing posts according to the year and month of publication. In addition, any categories or tags used in those posts will be automatically listed.
 ---
 
+# Archive Page 
+
 Listing posts according to the year and month of publication. In addition, any categories or tags used in those posts will be listed automatically.
 
-# Categories
+## Categories
 
 ```html
 {% raw %}<div id="archive-cat">
@@ -25,7 +27,7 @@ Listing posts according to the year and month of publication. In addition, any c
 </div><!-- End of #archive-cat -->{% endraw %}
 ```
 
-# Tags
+## Tags
 
 ```html
 {% raw %}<div id="archive-tag">
@@ -40,7 +42,8 @@ Listing posts according to the year and month of publication. In addition, any c
     </ul>
 </div><!-- End of #archive-tag -->{% endraw %}
 ```
-# Month & Year
+
+## Month & Year
 
 ```html
 {% raw %}<div id="archive-month">

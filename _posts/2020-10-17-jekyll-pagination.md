@@ -7,6 +7,8 @@ excerpt:
   If you have a lot of posts, then pagination is essential.
 ---
 
+# Jekyll Pagination
+
 If you have a lot of posts, then pagination is essential. From within my project directory, I began by installing `jekyll-paginate`;
 
 ```ruby

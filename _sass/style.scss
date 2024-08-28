@@ -185,24 +185,6 @@ pre {
 }
 
 //-------------------------------------------------------------------------------------
-// Social Media
-.social-media a:link {
-    font-size: $font-size-small;
-}
-
-.social-media ul {
-    list-style-type: none;
-    text-align: left; 
-    padding: 0;
-    margin: 0;
-}
-
-.social-media li {
-    display: inline;
-    padding-right: 0.5em;
-}
-
-//-------------------------------------------------------------------------------------
 // Footer
 footer {
     max-width: 100%;
@@ -217,5 +199,4 @@ footer p,
 footer em {
     font-size: $font-size-small;
 }
-
 

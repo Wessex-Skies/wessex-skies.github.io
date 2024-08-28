@@ -7,6 +7,8 @@ excerpt:
   So how do we implement and make use of categories when building a website with Jekyll?
 ---
 
+# Jekyll Categories
+
 So how do we implement and make use of categories? Once again I am indebted to [https://blog.webjeda.com/jekyll-categories/](https://blog.webjeda.com/jekyll-categories/) for providing the solution to this problem.
 
 The front matter on each of my posts appears in the following format;

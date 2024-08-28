@@ -7,6 +7,8 @@ excerpt:
   How to control the use and placement of excerpts within documents.
 ---
 
+# Jekyll Excerpts
+
 When using Jekyll, the blog index page can be configured to show each post in full, achieved with the command `{% raw %}{{ post.content }}{% endraw %}` To show only an excerpt, the command is `{% raw %}{{ post.excerpt }}{% endraw %}`.
 
 By default, if `{% raw %}{{ post.excerpt }}{% endraw %}` is used, Jekyll will show the first paragraph of every post. This may suit your needs, but there may be occasions when a post is short, and the use of an excerpt is pointless.
