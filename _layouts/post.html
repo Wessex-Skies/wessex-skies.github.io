@@ -8,6 +8,10 @@ layout: default
         <!-- so the next line can be omitted -->
         <!--<h1>{{ page.title }}</h1>-->
 
+        {{ content }}
+
+        <hr /> 
+
         <p class="post-meta">
             <span>
                 {{ page.date | date: "%-d %B %Y" }}
@@ -31,10 +35,6 @@ layout: default
                 {% endfor %}
             </span>
         </p>
-
-        <p>{% if page.synopsis != null %} {{ page.synopsis }} {% endif %}</p>
-
-        {{ content }}
 
     </div><!--End of container-fluid-->
 </div><!-- End main -->
