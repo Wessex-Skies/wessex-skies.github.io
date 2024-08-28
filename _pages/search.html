@@ -6,6 +6,35 @@ id: page
 
 <h1>Search</h1>
 
-<p></p>
+<h2>Search with Lunr.js</h2>
+
+<p>Enter the word you want to search for and tap the 'return' key.</p>
 
 {% include search-lunr.html %}
+
+<h2>Search by Category</h2>
+
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+
+    <ul> 
+        {% assign categoryname = category | first | slugify %}
+        
+        <li><a href="/categories/#{{ categoryname }}">{{ categoryname | capitalize }}</a></li>
+    </ul>
+
+{% endfor %}
+
+<h2>Search by Tags</h2>
+
+{% assign tags = site.tags | sort %}
+{% for tag in tags %}
+
+    {% assign tagname = tag | first | slugify %}
+        
+    <a class="float" href="/tags/#{{ tagname }}">{{ tagname | capitalize }}</a>
+    
+{% endfor %}
+
+
+
