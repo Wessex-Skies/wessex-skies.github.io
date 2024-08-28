@@ -36,22 +36,19 @@ a.site-title {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.65em;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .strap_line {
-    text-transform: lowercase;
     letter-spacing: 0.25em;
     font-size: $font-size-small;
-}
+    text-transform: uppercase;
 
-h1, h2, h3, h4, h5, h6, p, ul, li, em, a, th, tr, td {
-    font-weight: 400;
-    text-align: left;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-heading;
+    font-weight: 800;
     letter-spacing: 0.15em;
 }
 
@@ -74,7 +71,8 @@ h3 {
     padding-top: 1em;
 }
 
-p, ul, li, em, a {
+p, ul, li, em, a, th, tr, td {
+    font-weight: 400;
     font-size: 1em ;
     line-height: 1.667;
 }
@@ -103,7 +101,6 @@ a:link {
 nav a:link {
     font-size: $font-size-small;
     text-transform: uppercase;
-    padding: 0;
 }
 
 //-------------------------------------------------------------------------------------

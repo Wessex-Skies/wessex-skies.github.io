@@ -6,3 +6,6 @@
 
 - name: Tags 
   link: /tags/ 
+
+- name: Search  
+  link: /search/ 
