@@ -6,6 +6,8 @@ strap_line: Just another Github repository
 baseurl: ""
 url: "https://wessex-skies.github.io/"
 
+encoding: UTF-8 
+
 # Post Default Frontmatter
 defaults:
   -
@@ -22,7 +24,6 @@ plugins:
   - jekyll-sitemap 
   - jekyll-gist 
   - jekyll-include-cache 
-  - jekyll-github-metadata
   - liquid
   
 destination: _site
@@ -37,6 +38,7 @@ markdown: kramdown
 
 kramdown:
   input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
 
 # Server Port (default is 4000)
