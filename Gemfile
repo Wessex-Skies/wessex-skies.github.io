@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-include-cache"
   gem "jekyll-github-metadata"
+  gem "faraday-retry"
   gem "liquid"
 end
 
