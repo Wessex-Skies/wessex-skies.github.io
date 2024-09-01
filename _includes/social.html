@@ -1,0 +1,11 @@
+<div class="social">
+
+    <!--
+    Links to social media sites. Make changes to the list at _data/social.yml
+    -->
+    
+    {% for item in site.data.social %}
+        <a href="https://{{ item.link }}"><img class="icon" src="/assets/images/{{ item.icon }}">{{ item.name }}</a>
+    {% endfor %}
+
+</div><!--End of social-media-->
