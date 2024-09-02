@@ -1,8 +1,8 @@
 ---
 title: Protecting Images
 date: 2021-04-13
-categories: linux
-tags: [graphics, watermarks, resizing]
+categories: graphics
+tags: [watermarks, resizing]
 excerpt:
   How to protect pictures by adding watermarks, scaling and disabling the mouse right click option.
 toc: true

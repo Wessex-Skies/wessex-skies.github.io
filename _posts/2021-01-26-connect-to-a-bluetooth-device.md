@@ -1,6 +1,7 @@
 ---
 title: Bluetooth
 date: 2021-01-26
+uid: 20210126184616
 categories: linux 
 tags: [bluetooth]
 excerpt:
